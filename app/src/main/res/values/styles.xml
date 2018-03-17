@@ -1,0 +1,31 @@
+<resources>
+
+    <style name="AppTheme" parent="AppTheme.Base"/>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme.Base" parent="@style/Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">@color/primary_green</item>
+        <item name="colorPrimaryDark">@color/primary_green_dark</item>
+        <item name="android:textColorPrimary">@android:color/white</item>
+    </style>
+
+    <style name="ToolbarColor" parent="AppTheme.Base">
+        <item name="android:textColorSecondary">@android:color/white</item>
+    </style>
+
+    <!-- Settings activity theme. -->
+    <style name="SettingsTheme" parent="AppTheme">
+    </style>
+
+    <style name="SecondaryTextView">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textAppearance">?android:textAppearanceMedium</item>
+    </style>
+
+    <style name="PagerTabLayout" parent="Widget.Design.TabLayout">
+        <item name="tabIndicatorColor">@android:color/white</item>
+        <item name="tabSelectedTextColor">?android:textColorPrimaryInverse</item>
+    </style>
+
+</resources>

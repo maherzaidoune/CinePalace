@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="pref_lists_options">
+        <item>@string/pref_list_label_popular</item>
+        <item>@string/pref_list_label_rated</item>
+    </string-array>
+
+    <string-array name="pref_lists_values">
+        <item>@string/pref_list_popular</item>
+        <item>@string/pref_list_rating</item>
+    </string-array>
+    <string-array name="titles">
+        <item>movies</item>
+        <item>cine palace</item>
+        <item>favorites</item>
+    </string-array>
+</resources>

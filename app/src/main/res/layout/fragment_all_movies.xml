@@ -1,0 +1,34 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="#ff252e39">
+
+    <com.gigamole.navigationtabstrip.NavigationTabStrip
+        android:id="@+id/nts"
+        android:layout_width="match_parent"
+        android:layout_height="42dp"
+        android:layout_gravity="center"
+        android:layout_marginEnd="30dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginStart="30dp"
+        app:nts_active_color="#fff"
+        app:nts_color="#3cdedd"
+        app:nts_corners_radius="3.5dp"
+        app:nts_factor="0.8"
+        app:nts_gravity="bottom"
+        app:nts_inactive_color="#81ffffff"
+        app:nts_titles="@array/titles"
+        app:nts_type="point"
+        app:nts_typeface="fonts/moon.otf"
+        app:nts_weight="7dp"/>
+
+    <android.support.v4.view.ViewPager xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/friendPager"
+        android:layout_width="match_parent"
+        android:layout_height="0px"
+        android:layout_weight="1" />
+
+</LinearLayout>

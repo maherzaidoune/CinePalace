@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ListPreference
+        android:title="@string/pref_list_to_show"
+        android:key="@string/pref_list_key"
+        android:entries="@array/pref_lists_options"
+        android:entryValues="@array/pref_lists_values"
+        android:defaultValue="@string/pref_list_popular"/>
+
+</PreferenceScreen>

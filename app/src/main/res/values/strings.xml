@@ -1,0 +1,36 @@
+<resources xmlns:xliff="http://schemas.android.com/apk/res-auto">
+    <string name="app_name">Cinema Palace</string>
+    <string name="details_fragment_title">Movie Details</string>
+    <string name="action_share">Share</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_settings">Settings</string>
+
+    <string name="fragment_title_movies">Movies</string>
+    <string name="fragment_title_tv">Tv Series</string>
+    <string name="fragment_title_favourite">Favourites</string>
+
+
+    <string name="details_rating"><xliff:g id="rating">%1.1f</xliff:g>/10</string>
+    <string name="details_trailers_title">Trailers</string>
+    <string name="details_reviews_title">Reviews</string>
+    <string name="details_release_date_title">Release date</string>
+    <string name="details_rating_title">Rating</string>
+
+    <!-- Strings for synchronizing adapter -->
+    <string name="sync_account_type" >rrdl.cinemapalace.com</string>
+    <string name="content_authority">rrdl.cinemapalace.com</string>
+
+    <!-- Strings for preferences -->
+    <string name="pref_list_to_show">Sort movies:</string>
+    <string name="pref_list_key">movies_sorting</string>
+    <string name="pref_list_label_popular">Most popular</string>
+    <string name="pref_list_label_rated">Highest rated</string>
+    <string name="pref_list_popular" translatable="false">popularity.desc</string>
+    <string name="pref_list_rating" translatable="false">vote_average.desc</string>
+
+    <!-- String for sharing trailers -->
+    <string name="share_trailer">I really like this film! Follow this link to watch trailer %s </string>
+    <string name="share_movie">I think %s is very interesting!</string>
+
+</resources>
