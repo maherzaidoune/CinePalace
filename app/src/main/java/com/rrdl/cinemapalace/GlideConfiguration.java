@@ -1,3 +1,5 @@
+package com.rrdl.cinemapalace;
+
 import android.content.Context;
 import android.support.annotation.NonNull;
 

@@ -40,6 +40,8 @@ public class MoviesAdapter extends CursorAdapter {
         holder.title.setText(movieTitle);
         RequestOptions options = new RequestOptions()
                 .diskCacheStrategy(DiskCacheStrategy.ALL)
+                .placeholder(R.drawable.no_background_poster)
+                .error(R.drawable.no_background_poster)
                 .priority(Priority.HIGH);
         final String imageUrl = "http://image.tmdb.org/t/p/w342" + cursor.getString(MoviesListFragment.COL_IMAGE_PATH);
         Glide.with(context)

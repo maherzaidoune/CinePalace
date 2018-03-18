@@ -19,7 +19,7 @@ public class DetailsActivity extends AppCompatActivity {
 
         final Toolbar toolbar = findViewById(R.id.my_awesome_toolbar);
         setSupportActionBar(toolbar);
-        //getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         Log.i("DetailsFragment","onCreate");
 
         if (savedInstanceState == null) {

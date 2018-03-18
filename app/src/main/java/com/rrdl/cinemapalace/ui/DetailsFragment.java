@@ -125,6 +125,7 @@ public class DetailsFragment extends Fragment implements LoaderManager.LoaderCal
             @Override
             public void onClick(View v) {
                 Utility.changeMovieFavourite(getActivity(), mMovieId);
+                // interrest in
                 fabLike.setImageResource(Utility.isMovieFavourite(getActivity(), mMovieId) ? R.drawable.fab_heart : R.drawable.fab_heart_dislike);
             }
         });
@@ -236,7 +237,7 @@ public class DetailsFragment extends Fragment implements LoaderManager.LoaderCal
             return;
         }
         if (loader.getId() == DETAILS_MOVIE_LOADER) {
-            final String imgUrl = "http://image.tmdb.org/t/p/w185" + data.getString(data.getColumnIndex(MoviesContract.MovieEntry.COLUMN_POSTER_PATH));
+            final String imgUrl = "http://image.tmdb.org/t/p/w342" + data.getString(data.getColumnIndex(MoviesContract.MovieEntry.COLUMN_POSTER_PATH));
             Glide.with(getActivity()).load(imgUrl).into(this.poster);
 
             final String title = data.getString(data.getColumnIndex(MoviesContract.MovieEntry.COLUMN_TITLE));
