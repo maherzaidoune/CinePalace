@@ -17,10 +17,8 @@
     <string name="details_release_date_title">Release date</string>
     <string name="details_rating_title">Rating</string>
 
-    <!-- Strings for synchronizing adapter -->
-    <string name="sync_account_type" >rrdl.cinemapalace.com</string>
-    <string name="content_authority">rrdl.cinemapalace.com</string>
-
+    <string name="sync_account_type" translatable="false">com.rrdl.cinema</string>
+    <string name="content_authority" translatable="false">com.rrdl.cinema</string>
     <!-- Strings for preferences -->
     <string name="pref_list_to_show">Sort movies:</string>
     <string name="pref_list_key">movies_sorting</string>
@@ -30,7 +28,7 @@
     <string name="pref_list_rating" translatable="false">vote_average.desc</string>
 
     <!-- String for sharing trailers -->
-    <string name="share_trailer">I really like this film! Follow this link to watch trailer %s </string>
-    <string name="share_movie">I think %s is very interesting!</string>
+    <string name="share_trailer">Great movie ! Follow this link to watch trailer %s </string>
+    <string name="share_movie">I think %s is very interesting , take a  look!</string>
 
 </resources>

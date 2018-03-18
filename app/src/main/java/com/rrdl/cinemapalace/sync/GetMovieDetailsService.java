@@ -44,8 +44,6 @@ public class GetMovieDetailsService extends IntentService {
         } else {
             popularMoviesNetworkService.getTvTrailers(movieDbID, NetworkHelper.MOVIEDB_API_KEY, Locale.getDefault().getLanguage(), callback);
         }
-
-        // there are no reviews for tv shows yet
         if (isMovie) {
             popularMoviesNetworkService.getReviews(movieDbID, NetworkHelper.MOVIEDB_API_KEY, Locale.getDefault().getLanguage(), new Callback<List<Review>>() {
                 @Override

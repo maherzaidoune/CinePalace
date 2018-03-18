@@ -13,7 +13,6 @@ import android.os.Build;
 import android.os.Bundle;
 import android.util.Log;
 
-
 import com.rrdl.cinemapalace.R;
 import com.rrdl.cinemapalace.data.Movie;
 import com.rrdl.cinemapalace.data.MoviesContract;
@@ -33,9 +32,6 @@ public class PopularMoviesSyncAdapter extends AbstractThreadedSyncAdapter {
 
     public static final int SYNC_INTERVAL = 60 * 3;
     public static final int SYNC_FLEXTIME = SYNC_INTERVAL/3;
-
-    private static final long THREE_HOURS_IN_MILLIS = 1000 * 60 * 60 * 3;
-    private static final int MOVIES_NOTIFICATION_ID = 7006; // Just because 7*6 is 42 :)
 
     private PopularMoviesNetworkService popularMoviesNetworkService;
 

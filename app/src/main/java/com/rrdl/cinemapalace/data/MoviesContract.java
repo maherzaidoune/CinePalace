@@ -7,16 +7,14 @@ import android.provider.BaseColumns;
 
 public class MoviesContract {
 
-    public static final String CONTENT_AUTHORITY = "com.fitaleks.popularmovies";
+    public static final String CONTENT_AUTHORITY = "com.rrdl.cinema";
 
     public static final Uri BASE_CONTENT_URI = Uri.parse("content://" + CONTENT_AUTHORITY);
 
-    // Possible paths
     public static final String PATH_MOVIES = "movies";
     public static final String PATH_TRAILERS = "trailers";
     public static final String PATH_REVIEWS = "reviews";
 
-    /* Class that defines the table contents of the movie table */
     public static final class MovieEntry implements BaseColumns {
         public static final Uri CONTENT_URI = BASE_CONTENT_URI.buildUpon().appendPath(PATH_MOVIES).build();
         public static final String CONTENT_TYPE =

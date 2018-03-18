@@ -10,6 +10,9 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.bumptech.glide.Glide;
+import com.bumptech.glide.Priority;
+import com.bumptech.glide.load.engine.DiskCacheStrategy;
+import com.bumptech.glide.request.RequestOptions;
 import com.rrdl.cinemapalace.R;
 
 import butterknife.BindView;
@@ -35,10 +38,17 @@ public class MoviesAdapter extends CursorAdapter {
 
         final String movieTitle = cursor.getString(MoviesListFragment.COL_TITLE);
         holder.title.setText(movieTitle);
+        RequestOptions options = new RequestOptions()
+                .diskCacheStrategy(DiskCacheStrategy.ALL)
+                .priority(Priority.HIGH);
+        final String imageUrl = "http://image.tmdb.org/t/p/w342" + cursor.getString(MoviesListFragment.COL_IMAGE_PATH);
+        Glide.with(context)
+                .load(imageUrl)
+                .apply(options)
+                .into(holder.image);
 
-        final String imageUrl = "http://image.tmdb.org/t/p/w185" + cursor.getString(MoviesListFragment.COL_IMAGE_PATH);
-        Glide.with(context).load(imageUrl).into(holder.image);
     }
+
 
     public static class PosterItemViewHolder {
         @BindView(R.id.poster_img) ImageView image;

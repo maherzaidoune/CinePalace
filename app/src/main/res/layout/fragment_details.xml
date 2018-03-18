@@ -157,7 +157,6 @@
         app:borderWidth="0dp"
         app:elevation="@dimen/design_fab_elevation"
         app:layout_anchor="@id/details_scrollView"
-        app:layout_anchorGravity="bottom|right|end"
-        app:layout_behavior="com.fitaleks.popularmovies.ui.ScrollAwareFABBehavior" />
+        app:layout_anchorGravity="bottom|right|end" />
 
 </android.support.design.widget.CoordinatorLayout>

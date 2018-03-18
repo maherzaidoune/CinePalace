@@ -33,7 +33,6 @@ import com.rrdl.cinemapalace.R;
 import com.rrdl.cinemapalace.data.MoviesContract;
 import com.rrdl.cinemapalace.sync.GetMovieDetailsService;
 
-
 import butterknife.BindView;
 import butterknife.ButterKnife;
 import butterknife.Unbinder;
@@ -112,11 +111,15 @@ public class DetailsFragment extends Fragment implements LoaderManager.LoaderCal
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         Bundle arguments = getArguments();
+
         if (arguments != null) {
             mMovieId = arguments.getLong(DetailsActivity.KEY_MOVIE_ID);
+            Log.i("Details argument :",String.valueOf(mMovieId));
+
         }
         final View rootView = inflater.inflate(R.layout.fragment_details, container, false);
         unbinder = ButterKnife.bind(this, rootView);
+        Log.i(LOG_TAG,"view created");
 
         this.fabLike.setOnClickListener(new View.OnClickListener() {
             @Override

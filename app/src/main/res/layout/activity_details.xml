@@ -12,7 +12,7 @@
         android:id="@+id/movie_details_container"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        tools:context="com.fitaleks.popularmovies.DetailsActivity"
+        tools:context="com.rrdl.cinemapalace.ui.DetailsActivity"
         tools:ignore="MergeRootFrame"/>
 
 </LinearLayout>
