@@ -17,8 +17,8 @@ import retrofit.http.Query;
 
 public interface PopularMoviesNetworkService {
 
-    @GET("/discover/movie")
-    void getAllMovies(@Query("api_key") String apiKey, @Query("language") String language, Callback<List<Movie>> callback);
+    @GET("/fetch")
+    void getAllMovies(Callback<List<Movie>> callback);
 
     @GET("/discover/tv")
     void getAllTvSeries(@Query("api_key") String apiKey, @Query("language") String language, Callback<List<TVSeries>> callback);

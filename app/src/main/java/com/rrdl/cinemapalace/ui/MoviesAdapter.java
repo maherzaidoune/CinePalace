@@ -37,7 +37,7 @@ public class MoviesAdapter extends CursorAdapter {
         final PosterItemViewHolder holder = (PosterItemViewHolder)view.getTag();
 
         final String movieTitle = cursor.getString(MoviesListFragment.COL_TITLE);
-        holder.title.setText(movieTitle);
+        holder.title.setText(movieTitle+"\n test");
         RequestOptions options = new RequestOptions()
                 .diskCacheStrategy(DiskCacheStrategy.ALL)
                 .placeholder(R.drawable.no_background_poster)

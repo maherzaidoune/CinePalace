@@ -31,7 +31,7 @@ public class NetworkHelper {
                 .create();
 
         final RestAdapter restAdapter = new RestAdapter.Builder()
-                .setEndpoint("http://api.themoviedb.org/3")
+                .setEndpoint("https://cinemapalace.herokuapp.com")
                 .setConverter(new GsonConverter(gson))
                 .build();
 

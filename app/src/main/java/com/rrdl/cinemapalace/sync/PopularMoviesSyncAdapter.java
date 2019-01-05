@@ -45,7 +45,7 @@ public class PopularMoviesSyncAdapter extends AbstractThreadedSyncAdapter {
             return;
         }
         popularMoviesNetworkService = NetworkHelper.getMovieRESTAdapter();
-        popularMoviesNetworkService.getAllMovies(NetworkHelper.MOVIEDB_API_KEY, Locale.getDefault().getLanguage(), new Callback<List<Movie>>() {
+        popularMoviesNetworkService.getAllMovies(new Callback<List<Movie>>() {
             @Override
             public void success(List<Movie> allMovies, Response response) {
                 final Vector<ContentValues> cVVector = new Vector<>(allMovies.size());
